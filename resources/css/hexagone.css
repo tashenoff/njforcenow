@@ -1,0 +1,417 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+  }
+  
+  .hex-grid__wrap {
+    
+  }
+  .hex-grid__list {
+    --amount: 5;
+    position: relative;
+    margin: 0 auto;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(var(--amount), 1fr 2fr) 1fr;
+    font-size: 16px;
+    grid-gap: 0.625em 1.25em;
+    max-width: 810px;
+  }
+  .hex-grid__item {
+    position: relative;
+    grid-column: 1/span 3;
+    grid-row: calc(var(--counter) + var(--counter))/span 2;
+    height: 0;
+    padding-top: 80%;
+    filter: drop-shadow(0px 0px 2px #002543);
+    transition: 0.7s;
+  }
+  .hex-grid__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    @apply bg-primary;
+    overflow: hidden;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: 0.5s;
+  }
+  .hex-grid__item--blank {
+    display: none;
+  }
+  .hex-grid__item--fake {
+    pointer-events: none;
+    transform: scale(0.5);
+  }
+  .hex-grid__item--light {
+    color: #002543;
+  }
+  .hex-grid__item--light::before {
+    background-color: #fff;
+  }
+  .hex-grid__item:hover {
+    transform: scale(1.3);
+    z-index: 9;
+  }
+  .hex-grid__item:hover::before {
+    clip-path: polygon(25% 100%, 0 50%, 25% 0, 75% 0, 100% 50%, 75% 100%);
+  }
+  .hex-grid__content {
+    position: absolute;
+    @apply flex-col;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+    @apply text-white;
+    padding: 1em 1.5em;
+  }
+  
+  @media screen and (min-width: 1641px) {
+    .hex-grid__list {
+      --amount: 5;
+      --counter: 1;
+    }
+    .hex-grid__item:nth-of-type(5n + 1) {
+      grid-column: 1/span 3;
+    }
+    .hex-grid__item:nth-of-type(5n + 2) {
+      grid-column: 3/span 3;
+      grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
+    }
+    .hex-grid__item:nth-of-type(5n + 3) {
+      grid-column: 5/span 3;
+    }
+    .hex-grid__item:nth-of-type(5n + 4) {
+      grid-column: 7/span 3;
+      grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
+    }
+    .hex-grid__item:nth-of-type(5n + 5) {
+      grid-column: 9/span 3;
+    }
+    .hex-grid__item:nth-of-type(n + 6) {
+      --counter: 2;
+    }
+    .hex-grid__item:nth-of-type(n + 11) {
+      --counter: 3;
+    }
+    .hex-grid__item:nth-of-type(n + 16) {
+      --counter: 4;
+    }
+    .hex-grid__item:nth-of-type(n + 21) {
+      --counter: 5;
+    }
+    .hex-grid__item:nth-of-type(n + 26) {
+      --counter: 6;
+    }
+    .hex-grid__item:nth-of-type(n + 31) {
+      --counter: 7;
+    }
+    .hex-grid__item:nth-of-type(n + 36) {
+      --counter: 8;
+    }
+    .hex-grid__item:nth-of-type(n + 41) {
+      --counter: 9;
+    }
+    .hex-grid__item:nth-of-type(n + 46) {
+      --counter: 10;
+    }
+    .hex-grid__item:nth-of-type(n + 51) {
+      --counter: 11;
+    }
+    .hex-grid__item:nth-of-type(n + 56) {
+      --counter: 12;
+    }
+    .hex-grid__item:nth-of-type(n + 61) {
+      --counter: 13;
+    }
+    .hex-grid__item:nth-of-type(n + 66) {
+      --counter: 14;
+    }
+    .hex-grid__item:nth-of-type(n + 71) {
+      --counter: 15;
+    }
+    .hex-grid__item:nth-of-type(n + 76) {
+      --counter: 16;
+    }
+    .hex-grid__item:nth-of-type(n + 81) {
+      --counter: 17;
+    }
+    .hex-grid__item:nth-of-type(n + 86) {
+      --counter: 18;
+    }
+    .hex-grid__item:nth-of-type(n + 91) {
+      --counter: 19;
+    }
+    .hex-grid__item:nth-of-type(n + 96) {
+      --counter: 20;
+    }
+    .hex-grid__item:nth-of-type(n + 101) {
+      --counter: 21;
+    }
+  }
+  @media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .hex-grid__list {
+      --amount: 4;
+      --counter: 1;
+    }
+    .hex-grid__item:nth-of-type(4n + 1) {
+      grid-column: 1/span 3;
+    }
+    .hex-grid__item:nth-of-type(4n + 2) {
+      grid-column: 3/span 3;
+      grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
+    }
+    .hex-grid__item:nth-of-type(4n + 3) {
+      grid-column: 5/span 3;
+    }
+    .hex-grid__item:nth-of-type(4n + 4) {
+      grid-column: 7/span 3;
+      grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
+    }
+    .hex-grid__item:nth-of-type(n + 5) {
+      --counter: 2;
+    }
+    .hex-grid__item:nth-of-type(n + 9) {
+      --counter: 3;
+    }
+    .hex-grid__item:nth-of-type(n + 13) {
+      --counter: 4;
+    }
+    .hex-grid__item:nth-of-type(n + 17) {
+      --counter: 5;
+    }
+    .hex-grid__item:nth-of-type(n + 21) {
+      --counter: 6;
+    }
+    .hex-grid__item:nth-of-type(n + 25) {
+      --counter: 7;
+    }
+    .hex-grid__item:nth-of-type(n + 29) {
+      --counter: 8;
+    }
+    .hex-grid__item:nth-of-type(n + 33) {
+      --counter: 9;
+    }
+    .hex-grid__item:nth-of-type(n + 37) {
+      --counter: 10;
+    }
+    .hex-grid__item:nth-of-type(n + 41) {
+      --counter: 11;
+    }
+    .hex-grid__item:nth-of-type(n + 45) {
+      --counter: 12;
+    }
+    .hex-grid__item:nth-of-type(n + 49) {
+      --counter: 13;
+    }
+    .hex-grid__item:nth-of-type(n + 53) {
+      --counter: 14;
+    }
+    .hex-grid__item:nth-of-type(n + 57) {
+      --counter: 15;
+    }
+    .hex-grid__item:nth-of-type(n + 61) {
+      --counter: 16;
+    }
+    .hex-grid__item:nth-of-type(n + 65) {
+      --counter: 17;
+    }
+    .hex-grid__item:nth-of-type(n + 69) {
+      --counter: 18;
+    }
+    .hex-grid__item:nth-of-type(n + 73) {
+      --counter: 19;
+    }
+    .hex-grid__item:nth-of-type(n + 77) {
+      --counter: 20;
+    }
+    .hex-grid__item:nth-of-type(n + 81) {
+      --counter: 21;
+    }
+  }
+  @media screen and (min-width: 850px) and (max-width: 1280px) {
+    .hex-grid__list {
+      max-width: 700px;
+      --amount: 3;
+      --counter: 1;
+      grid-gap: 1.5rem 3rem;
+    }
+    .hex-grid__item:nth-of-type(3n + 1) {
+      grid-column: 1/span 3;
+    }
+    .hex-grid__item:nth-of-type(3n + 2) {
+      grid-column: 3/span 3;
+      grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
+    }
+    .hex-grid__item:nth-of-type(3n + 3) {
+      grid-column: 5/span 3;
+    }
+    .hex-grid__item:nth-of-type(n + 4) {
+      --counter: 2;
+    }
+    .hex-grid__item:nth-of-type(n + 7) {
+      --counter: 3;
+    }
+    .hex-grid__item:nth-of-type(n + 10) {
+      --counter: 4;
+    }
+    .hex-grid__item:nth-of-type(n + 13) {
+      --counter: 5;
+    }
+    .hex-grid__item:nth-of-type(n + 16) {
+      --counter: 6;
+    }
+    .hex-grid__item:nth-of-type(n + 19) {
+      --counter: 7;
+    }
+    .hex-grid__item:nth-of-type(n + 22) {
+      --counter: 8;
+    }
+    .hex-grid__item:nth-of-type(n + 25) {
+      --counter: 9;
+    }
+    .hex-grid__item:nth-of-type(n + 28) {
+      --counter: 10;
+    }
+    .hex-grid__item:nth-of-type(n + 31) {
+      --counter: 11;
+    }
+    .hex-grid__item:nth-of-type(n + 34) {
+      --counter: 12;
+    }
+    .hex-grid__item:nth-of-type(n + 37) {
+      --counter: 13;
+    }
+    .hex-grid__item:nth-of-type(n + 40) {
+      --counter: 14;
+    }
+    .hex-grid__item:nth-of-type(n + 43) {
+      --counter: 15;
+    }
+    .hex-grid__item:nth-of-type(n + 46) {
+      --counter: 16;
+    }
+    .hex-grid__item:nth-of-type(n + 49) {
+      --counter: 17;
+    }
+    .hex-grid__item:nth-of-type(n + 52) {
+      --counter: 18;
+    }
+    .hex-grid__item:nth-of-type(n + 55) {
+      --counter: 19;
+    }
+    .hex-grid__item:nth-of-type(n + 58) {
+      --counter: 20;
+    }
+    .hex-grid__item:nth-of-type(n + 61) {
+      --counter: 21;
+    }
+  }
+  @media screen and (min-width: 550px) and (max-width: 849px) {
+    .hex-grid__list {
+      max-width: 500px;
+      --amount: 2;
+      --counter: 1;
+      grid-gap: 1.5rem 3rem;
+    }
+    .hex-grid__item:nth-of-type(2n + 1) {
+      grid-column: 1/span 3;
+    }
+    .hex-grid__item:nth-of-type(2n + 2) {
+      grid-column: 3/span 3;
+      grid-row: calc(var(--counter) + var(--counter) - 1)/span 2;
+    }
+    .hex-grid__item:nth-of-type(n + 3) {
+      --counter: 2;
+    }
+    .hex-grid__item:nth-of-type(n + 5) {
+      --counter: 3;
+    }
+    .hex-grid__item:nth-of-type(n + 7) {
+      --counter: 4;
+    }
+    .hex-grid__item:nth-of-type(n + 9) {
+      --counter: 5;
+    }
+    .hex-grid__item:nth-of-type(n + 11) {
+      --counter: 6;
+    }
+    .hex-grid__item:nth-of-type(n + 13) {
+      --counter: 7;
+    }
+    .hex-grid__item:nth-of-type(n + 15) {
+      --counter: 8;
+    }
+    .hex-grid__item:nth-of-type(n + 17) {
+      --counter: 9;
+    }
+    .hex-grid__item:nth-of-type(n + 19) {
+      --counter: 10;
+    }
+    .hex-grid__item:nth-of-type(n + 21) {
+      --counter: 11;
+    }
+    .hex-grid__item:nth-of-type(n + 23) {
+      --counter: 12;
+    }
+    .hex-grid__item:nth-of-type(n + 25) {
+      --counter: 13;
+    }
+    .hex-grid__item:nth-of-type(n + 27) {
+      --counter: 14;
+    }
+    .hex-grid__item:nth-of-type(n + 29) {
+      --counter: 15;
+    }
+    .hex-grid__item:nth-of-type(n + 31) {
+      --counter: 16;
+    }
+    .hex-grid__item:nth-of-type(n + 33) {
+      --counter: 17;
+    }
+    .hex-grid__item:nth-of-type(n + 35) {
+      --counter: 18;
+    }
+    .hex-grid__item:nth-of-type(n + 37) {
+      --counter: 19;
+    }
+    .hex-grid__item:nth-of-type(n + 39) {
+      --counter: 20;
+    }
+    .hex-grid__item:nth-of-type(n + 41) {
+      --counter: 21;
+    }
+    .hex-grid__item:hover {
+      transform: none;
+    }
+    .hex-grid__item:hover::before {
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+  }
+  @media screen and (max-width: 549px) {
+    .hex-grid__list {
+      max-width: 350px;
+      --amount: 1;
+      grid-gap: 1.5rem 3rem;
+    }
+    .hex-grid__item--fake {
+      display: none;
+    }
+    .hex-grid__content {
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 250px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }

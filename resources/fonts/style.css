@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?a6rkcq');
+  src:  url('fonts/icomoon.eot?a6rkcq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?a6rkcq') format('truetype'),
+    url('fonts/icomoon.woff?a6rkcq') format('woff'),
+    url('fonts/icomoon.svg?a6rkcq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-question .path1:before {
+  content: "\e91e";
+  color: rgb(0, 169, 198);
+}
+.icon-question .path2:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-arrow-b-fill:before {
+  content: "\e900";
+  color: #00a9c6;
+}
+.icon-arrow-b-right:before {
+  content: "\e901";
+  color: #00a9c6;
+}
+.icon-arrow-down:before {
+  content: "\e902";
+  color: #00a9c6;
+}
+.icon-arrow-left:before {
+  content: "\e903";
+  color: #00a9c6;
+}
+.icon-arrow-left-fill:before {
+  content: "\e904";
+  color: #00a9c6;
+}
+.icon-arrow-right:before {
+  content: "\e905";
+  color: #00a9c6;
+}
+.icon-arrow-right-cirle:before {
+  content: "\e906";
+  color: #00a9c6;
+}
+.icon-arrow-right-fill:before {
+  content: "\e907";
+  color: #00a9c6;
+}
+.icon-arrow-top:before {
+  content: "\e908";
+  color: #00a9c6;
+}
+.icon-arrow-top-fill-1:before {
+  content: "\e909";
+  color: #00a9c6;
+}
+.icon-calendar:before {
+  content: "\e90a";
+  color: #00a9c6;
+}
+.icon-call:before {
+  content: "\e90b";
+  color: #00a9c6;
+}
+.icon-cloud:before {
+  content: "\e90c";
+  color: #61c1d1;
+}
+.icon-customer:before {
+  content: "\e90d";
+  color: #07b7d2;
+}
+.icon-doc:before {
+  content: "\e90e";
+  color: #00a9c6;
+}
+.icon-document-stamp:before {
+  content: "\e90f";
+  color: #00a9c6;
+}
+.icon-download:before {
+  content: "\e910";
+  color: #00a9c6;
+}
+.icon-eyes:before {
+  content: "\e911";
+  color: #00a9c6;
+}
+.icon-internet:before {
+  content: "\e912";
+  color: #61c1d1;
+}
+.icon-like:before {
+  content: "\e913";
+  color: #00a9c6;
+}
+.icon-mail:before {
+  content: "\e914";
+  color: #00a9c6;
+}
+.icon-marketing:before {
+  content: "\e915";
+  color: #61c1d1;
+}
+.icon-network:before {
+  content: "\e916";
+  color: #00a9c6;
+}
+.icon-notebook:before {
+  content: "\e917";
+  color: #61c1d1;
+}
+.icon-people:before {
+  content: "\e918";
+  color: #00a9c6;
+}
+.icon-people-tower:before {
+  content: "\e919";
+  color: #00a9c6;
+}
+.icon-strategy:before {
+  content: "\e91a";
+  color: #00a9c6;
+}
+.icon-team:before {
+  content: "\e91b";
+  color: #00a9c6;
+}
+.icon-technical-support:before {
+  content: "\e91c";
+  color: #00a9c6;
+}
+.icon-usb:before {
+  content: "\e91d";
+  color: #61c1d1;
+}

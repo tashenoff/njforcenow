@@ -1,0 +1,10 @@
+
+
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "custom.css";
+@import 'swiper/swiper.scss';
+@import 'slider.css';
+@import 'hexagone.css';

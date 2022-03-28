@@ -1,0 +1,25 @@
+.sub-menu {
+    @apply bg-primary px-0 absolute hidden;
+
+    li {
+        @apply px-5 border-b border-white border-opacity-20 leading-[3] mx-0;
+
+        &:hover {
+            @apply bg-secondary;
+        }
+    }
+
+
+}
+
+.menu-item {
+   
+
+    &:hover {
+        .sub-menu {
+            @apply block;
+        }
+    }
+
+
+}

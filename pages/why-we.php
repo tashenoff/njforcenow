@@ -68,7 +68,7 @@
                     <div class="flex flex-col py-10">
                         <a  id="myBtn" href="#" class="bg-primary px-5 py-3 text-white">Оставить заявку</a>
                         <a id="myBtn" href="#"  class="bg-black bg-opacity-80 px-5 py-3 mt-5 text-white">Оставить заявку</a>
-                        <a id="myBtn" href="#">служба поддержки</a>
+                        
                     </div>
             </div>
 

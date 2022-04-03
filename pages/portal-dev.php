@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 <?php get_template_part('parts/home/banner'); ?>
 
-<section class="relative -top-20 z-50">
+<section class="relative -top-20 z-40">
     <div class="container">
         <div class="flex flex-col h-[400px] p-5 bg-white">
             <div class="flex border-b border-black py-5 border-opacity-20 items-center justify-between">

@@ -9,9 +9,6 @@
 
 	<?php wp_head(); ?>
 
-
-
-
 </head>
 
 <body <?php body_class('bg-white text-gray-900 antialiased'); ?>>
@@ -62,13 +59,34 @@
 							</div>
 						</div>
 						<div class="flex items-center"><i class="icon-arrow-right-cirle mr-3"></i>
-							<span>служба поддержки</span>
+							<a id="myBtn" href="#">служба поддержки</a>
+							
 						</div>
 					</div>
 				</div>
 			</div>
 
 		</header>
+
+	
+
+
+<div id="myModal" class="modal">
+
+ 
+  <div class="modal-content bg-primary text-white">
+    <div class="modal-header p-5">
+      <span class="close">&times;</span>
+      <h2 class="text-[24px]">НАПИСАТЬ СООБЩЕНИЕ</h2>
+	  <p>Чтобы получить интересующую Вас информацию, пожалуйста, заполните 
+форму:</p>
+    </div>
+    <div class="p-5 modal-body bg-primary">
+	<?php echo apply_shortcodes('[contact-form-7 id="67" title="modal"]'); ?>
+    </div>
+  </div>
+
+</div>
 
 		<div id="content" class="site-content flex-grow">
 

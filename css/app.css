@@ -1200,6 +1200,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
 .text-\[100px\] {
   font-size: 100px;
 }
@@ -1250,10 +1254,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[35px\] {
   font-size: 35px;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
 }
 
 .text-\[16px\] {
@@ -1345,6 +1345,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-opacity-50 {
@@ -1711,6 +1716,8 @@ input {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .formfield {
@@ -2529,6 +2536,79 @@ $themeColor: #007aff !default;
     padding-top: 40px;
     padding-bottom: 40px;
   }
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 50;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0,0,0);
+  /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  /* border: 5px solid #7B1FA2; */
+  width: 30%;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top:-300px;
+    opacity:0
+  }
+
+  to {
+    top:0;
+    opacity:1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top:-300px;
+    opacity:0
+  }
+
+  to {
+    top:0;
+    opacity:1
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .hover\:border-primary:hover {

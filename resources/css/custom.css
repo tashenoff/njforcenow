@@ -35,7 +35,7 @@ input {
 
 
 .formbutton {
-    @apply h-[50px] bg-white w-full mt-5 uppercase;
+    @apply h-[50px] bg-white text-black w-full mt-5 uppercase;
 }
 
 .formfield {

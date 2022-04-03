@@ -10,7 +10,7 @@
 <?php get_header(); ?>
 <?php get_template_part('parts/home/banner'); ?>
 
-<section class="relative -top-20 z-50">
+<section class="relative -top-20 z-40">
     <div class="container px-40">
         <div class="grid grid-cols-2 gap-0">
             <div class="div">
@@ -42,7 +42,7 @@
 </section>
 
 <section class="site-footer bg-banner relative bg-banner__marketing text-white py-12 h-[100px] flex items-center">
-    <div class="container relative z-50">
+    <div class="container relative z-40">
         <div class="flex justify-between w-full text-white items-center">
             <div class="div">
                 <h1>технологии</h1>

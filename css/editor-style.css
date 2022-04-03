@@ -730,6 +730,10 @@
   line-height: 1.75rem;
 }
 
+.text-\[24px\]{
+  font-size: 24px;
+}
+
 .text-\[100px\]{
   font-size: 100px;
 }
@@ -780,10 +784,6 @@
 
 .text-\[35px\]{
   font-size: 35px;
-}
-
-.text-\[24px\]{
-  font-size: 24px;
 }
 
 .text-\[16px\]{
@@ -875,6 +875,11 @@
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-opacity-50{

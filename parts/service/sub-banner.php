@@ -1,5 +1,5 @@
 <section class="relative">
-<div class="container relative z-50 -top-20">
+<div class="container relative z-40 -top-20">
     <div class="bg-white p-10 flex shadow">
     <img src="<?php echo get_template_directory_uri(); ?>/resources/img/genesys.svg">
     <div class="px-5">

@@ -8,6 +8,10 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 	<?php wp_head(); ?>
+
+
+
+
 </head>
 
 <body <?php body_class('bg-white text-gray-900 antialiased'); ?>>
@@ -19,7 +23,7 @@
 		<?php do_action('tailpress_header'); ?>
 
 		<header>
-			<div class="fixed leading-[4] z-50 w-full border-b border-opacity-20 border-white">
+			<div id="menu" class="fixed menu z-50 leading-[4] z-50 w-full border-b border-opacity-20 border-white">
 				<div class="mx-auto container">
 					<div class="lg:flex text-white lg:justify-between lg:items-center relative">
 						<div class="flex justify-between items-center">

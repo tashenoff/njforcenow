@@ -10,3 +10,12 @@
     }
   });
 })();
+
+
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".menu");
+    $nav.toggleClass('bg-primary', $(this).scrollTop() > $nav.height());
+  });
+});

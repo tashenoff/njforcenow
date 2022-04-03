@@ -11,6 +11,7 @@ function tailpress_enqueue_scripts()
 	wp_enqueue_style( 'swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css', null, null, false );
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ), true );
 	wp_register_script( 'Swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.js', null, null, false );	
+	wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', null, null, false );	
 	wp_enqueue_script('Swiper');	
 	
 }

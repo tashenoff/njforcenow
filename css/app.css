@@ -572,6 +572,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 40;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .order-last {
   order: 9999;
 }
@@ -816,6 +824,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -876,8 +888,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 58px;
 }
 
+.w-auto {
+  width: auto;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-none {
+  max-width: none;
 }
 
 .flex-grow {
@@ -1342,14 +1366,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: var(--color-secondary);
 }
 
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .text-opacity-50 {
@@ -2611,6 +2635,59 @@ $themeColor: #007aff !default;
   cursor: pointer;
 }
 
+* {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.r {
+  font-size:3em;
+  font-weight:100;
+  padding:20px 0;
+}
+
+.btn {
+  font-size:1.1em;
+  padding:20px 80px 20px 40px;
+  background-color:#E94751;
+  color:#fff;
+  border-radius:50px;
+  margin: auto;
+  border:2px solid #E94751;
+}
+
+.btn:hover {
+  transform:scale(1.05);
+  background-color:transparent;
+  color:#E94751;
+  border:2px solid #E94751;
+}
+
+.btn:hover .ico {
+  margin-left:30px;
+  background-color:#E94751;
+  color:white;
+  transform:rotate(360deg);
+}
+
+.btn:active {
+  background-color:#E94751;
+  color:white;
+}
+
+.ico {
+  transition:all 0.5s;
+  background-color:white;
+  color:#E94751;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -10px;
+  font-size: 1.5em;
+}
+
 .hover\:border-primary:hover {
   border-color: var(--color-primary);
 }
@@ -2709,3 +2786,4 @@ $themeColor: #007aff !default;
     font-size: 48px;
   }
 }
+

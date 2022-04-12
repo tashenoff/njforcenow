@@ -1,4 +1,11 @@
-<section style="background-repeat:no-repeat; background-size:cover; background-image: url(<?php echo the_post_thumbnail_url(); ?>);" class="bg-banner relative text-white relative">
+<section style="background-repeat:no-repeat; background-size:cover;" class="bg-banner relative text-white relative overflow-hidden">
+
+
+<video class="absolute w-full z-10 w-auto min-w-full min-h-full max-w-none z-20" autoplay loop muted>
+            <source src="<?php echo get_template_directory_uri(); ?>/resources/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
 
     <div class="container mx-auto relative z-40">
         <div class="flex flex-col w-full items-start justify-center h-[680px] text-white ">

@@ -414,12 +414,12 @@
   width: 6rem;
 }
 
-.w-\[58px\]{
-  width: 58px;
-}
-
 .w-auto{
   width: auto;
+}
+
+.w-\[58px\]{
+  width: 58px;
 }
 
 .min-w-full{

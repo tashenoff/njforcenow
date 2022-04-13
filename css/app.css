@@ -884,12 +884,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 6rem;
 }
 
-.w-\[58px\] {
-  width: 58px;
-}
-
 .w-auto {
   width: auto;
+}
+
+.w-\[58px\] {
+  width: 58px;
 }
 
 .min-w-full {
@@ -1699,7 +1699,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-banner::before {
   content: "";
-  opacity: 0.7;
+  opacity: 0.9;
   z-index: 40;
   position: absolute;
   top: 0px;

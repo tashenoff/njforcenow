@@ -25,7 +25,7 @@
 					<div class="lg:flex text-white lg:justify-between lg:items-center relative">
 						<div class="flex justify-between items-center">
 							<div class="flex items-center">
-							<img class="w-[130px] " src="<?php echo get_template_directory_uri(); ?>/resources/img/logo.svg" alt="">
+							<a href="/"><img class="w-[120px] " src="<?php echo get_template_directory_uri(); ?>/resources/img/logo.svg" alt=""></a>
 
 
 								<?php get_template_part( 'parts/navs/menu');?>

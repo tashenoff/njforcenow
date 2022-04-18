@@ -4,7 +4,7 @@
             <div class="flex w-full items-center justify-between">
 
                 <div class="flex items-center">
-                    <div class="pr-5 font-bold text-[24px]">logo</div>
+                <a href="/"><img class="w-[130px] pr-5 " src="<?php echo get_template_directory_uri(); ?>/resources/img/logo.svg" alt=""></a>
 
                     <div class="pr-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

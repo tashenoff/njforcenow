@@ -27,6 +27,7 @@
     <div class="flex w-full">
     <div class="w-full relative">
     <div class="bg-primary h-[50px] w-[50px] block relative -top-40 right-0">1</div>
+    <div class="bg-primary h-[50px] w-[50px] block relative -top-40 right-0">1</div>
         <ul>
             <li>Письмо авторизации</li>
             <li>Письмо авторизации</li>

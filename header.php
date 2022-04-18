@@ -25,18 +25,7 @@
 					<div class="lg:flex text-white lg:justify-between lg:items-center relative">
 						<div class="flex justify-between items-center">
 							<div class="flex items-center">
-								<?php if (has_custom_logo()) { ?>
-									<?php the_custom_logo(); ?>
-								<?php } else { ?>
-									<div class="text-lg uppercase">
-
-										<?php echo get_bloginfo('name'); ?>
-										</a>
-									</div>
-
-
-
-								<?php } ?>
+							<img class="w-[130px] " src="<?php echo get_template_directory_uri(); ?>/resources/img/logo.svg" alt="">
 
 
 								<?php get_template_part( 'parts/navs/menu');?>

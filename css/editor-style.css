@@ -366,6 +366,10 @@
   width: 4rem;
 }
 
+.w-\[130px\]{
+  width: 130px;
+}
+
 .w-6{
   width: 1.5rem;
 }
@@ -747,11 +751,6 @@
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-\[24px\]{

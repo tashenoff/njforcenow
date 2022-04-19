@@ -1,13 +1,13 @@
-<section style="background-repeat:no-repeat; background-size:cover;" class="bg-banner relative text-white relative overflow-hidden">
+<section style="background-repeat:no-repeat; background-size:cover;" class="bg-banner bg-banner-home relative text-white relative overflow-hidden">
 
 
 <video class="absolute w-full z-10 w-auto min-w-full min-h-full max-w-none z-20" autoplay loop muted>
-            <source src="<?php echo get_template_directory_uri(); ?>/resources/video4.mp4" type="video/mp4" />
+            <source src="<?php echo get_template_directory_uri(); ?>/resources/video5.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
 
 
-    <div class="container mx-auto relative z-40">
+    <div class="container mx-auto relative z-[42]">
         <div class="flex flex-col w-full items-start justify-center h-[680px] text-white ">
             <?php the_title(sprintf('<h1 class=""><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h1>'); ?>
 

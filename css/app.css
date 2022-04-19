@@ -580,6 +580,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
+.z-\[42\] {
+  z-index: 42;
+}
+
 .order-last {
   order: 9999;
 }
@@ -836,8 +840,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
-.w-\[130px\] {
-  width: 130px;
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-6 {
@@ -876,8 +880,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.w-\[120px\] {
-  width: 120px;
+.w-\[130px\] {
+  width: 130px;
 }
 
 .w-5 {
@@ -1707,6 +1711,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
   width: 100%;
   background-color: var(--color-primary);
+}
+
+.bg-banner-home::after {
+  content: "";
+  z-index: 41;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url('../resources/img/dots3.png');
+  background-size: 12px;
 }
 
 .bg-banner {

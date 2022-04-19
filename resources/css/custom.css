@@ -8,6 +8,14 @@
     @apply bg-primary absolute top-0 left-0 h-full w-full block;
 }
 
+.bg-banner-home::after {
+    content: "";
+    z-index: 41;
+    @apply absolute top-0 left-0 h-full w-full block;
+    background-image: url('../resources/img/dots3.png');
+    background-size: 12px;
+}
+
 .bg-banner {
     background-repeat: no-repeat;
     background-size: cover;

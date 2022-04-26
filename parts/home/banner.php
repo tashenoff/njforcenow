@@ -2,7 +2,7 @@
 
 
 <video class="absolute w-full z-10 w-auto min-w-full min-h-full max-w-none z-20" autoplay loop muted>
-            <source src="<?php echo get_template_directory_uri(); ?>/resources/video5.mp4" type="video/mp4" />
+            <source src="<?php echo get_template_directory_uri(); ?>/resources/video3.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
 
